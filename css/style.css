@@ -1,16 +1,23 @@
 .flex{
   display: flex;
-  justify-content:space-around;
+  flex-direction: column;
+  /* always affects the main axis */
+  justify-content:space-evenly;
+  /* always affects the minor axis */
+  align-items: center;
   height: 200px;
-  
+  width: 50%;
+  margin: auto;
   
 }
 .center{
   margin:auto;
   text-align: center;
 }
-
-
-input{
-  align-self: center;
+label{
+  text-align: left ;
+  width: 167px;
+  justify-self: end;
 }
+
+
