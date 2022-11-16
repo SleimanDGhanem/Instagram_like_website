@@ -25,5 +25,9 @@ li:first-of-type{
   color: blue'
 }
 .scrolling{
+  background-color: #f8f8f8;
+  min-height: 100vh;
+  width: 500px;
+  margin: auto; 
   
 }
