@@ -6,6 +6,7 @@ ul{
   list-style-type: none;
   margin: 0;
   padding: 10px 0 10px 0;
+  border-radius: 0 0 3px 3px;
 }
 a{
   color:aliceblue;
@@ -22,4 +23,7 @@ li:first-of-type{
   text-align: left;
   flex-grow: 1;
   color: blue'
+}
+.scrolling{
+  
 }
