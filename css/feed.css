@@ -1,6 +1,25 @@
 ul{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
   background-color: #333333;
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 10px 0 10px 0;
+}
+a{
+  color:aliceblue;
+  text-decoration: none;
+}
+li{
+  flex-basis: 100px;
+  text-align: center;
+  padding-right: 1vw;
+  border-right: solid 1px black;
+}
+li:first-of-type{
+  padding-left: 4%;
+  text-align: left;
+  flex-grow: 1;
+  color: blue'
 }
