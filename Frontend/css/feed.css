@@ -30,7 +30,8 @@ p{
 .scrolling{
   background-color: #f8f8f8;
   min-height: 100vh;
-  width: 500px;
+  max-width: 500px;
+  width: 100%;
   margin: auto; 
   
 }
@@ -39,7 +40,8 @@ p{
   border: solid 1px #DBDBDB;
   border-radius: 3px;
   width:80%;
-  margin: auto; 
+  margin: auto;
+  margin-bottom: 10px; 
 }
 .title{
   display: flex;
