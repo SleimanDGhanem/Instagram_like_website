@@ -31,3 +31,27 @@ li:first-of-type{
   margin: auto; 
   
 }
+
+.post{
+  border: solid 1px #DBDBDB;
+  border-radius: 3px;
+  width:80%;
+  margin: auto; 
+}
+.title{
+  display: flex;
+  justify-content: space-between;
+}
+
+.photo{
+  max-width: 100%;
+}
+
+p{
+  margin: 0;
+  padding: 1vw 0 0 1vw;
+}
+i{
+  margin: 0;
+  padding: 1.4vw 1.3vw 0 0;
+}
