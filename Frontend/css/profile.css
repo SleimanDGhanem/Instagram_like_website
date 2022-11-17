@@ -1,0 +1,7 @@
+.image{
+  width:20%;
+}
+.profile{
+  display:flex;
+  justify-content: space-between;
+}
