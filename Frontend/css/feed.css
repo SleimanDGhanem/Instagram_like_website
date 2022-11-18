@@ -30,7 +30,7 @@ p{
 .scrolling{
   background-color: #f8f8f8;
   min-height: 100vh;
-  max-width: 60%;
+  max-width: 800px;
   margin: auto; 
   
 }
