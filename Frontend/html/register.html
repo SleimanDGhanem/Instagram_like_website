@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/background.css" />
     <!-- styling sheet -->
     <link rel="stylesheet" href="../css/style.css" />
-    <title>Log in to Input</title>
+    <title>Register to Join Input</title>
   </head>
 
   <body>
@@ -22,7 +22,10 @@
       <!-- /title -->
       <!-- login form-->
       <form class="loginbox" action="" method="post">
-        <h2>Please Sign in</h2>
+        <h2>Please Sign up</h2>
+        <label for="name"
+          >Full Name:
+          <input type="text" name="name" id="name" />
         <label for="email"
           >Email:
           <input type="email" name="email" id="email" />
@@ -30,6 +33,10 @@
         <label for="password"
           >Password:
           <input type="password" name="password" id="password" />
+        </label>
+        <label for="confirm_password"
+          >Confirm Password:
+          <input type="password" name="confirm_password" id="confirm_password" />
         </label>
         <input class="item-bottom" type="button" value="submit" />
       </form>
