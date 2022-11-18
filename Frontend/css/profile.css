@@ -1,7 +1,20 @@
 .image{
-  width:20%;
+  min-width:10%;
+  max-width: 20%;
+  border-radius: 50%;
+}
+.scrolling{
+  border-radius: 10px ;
 }
 .profile{
   display:flex;
   justify-content: space-between;
+  border-bottom: solid 1px #DBDBDB;
+  border-radius: 10px;
+  margin-top: 30vh;
+  padding: 1vh 0 1vh 3vw;
+}
+
+.user{
+  padding-top: vh;
 }
