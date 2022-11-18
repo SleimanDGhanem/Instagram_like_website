@@ -55,6 +55,7 @@ p{
 .captions{
   display: flex;
   flex-wrap: wrap;
+  padding:3vh 0 3vh 0;
 
 }
 
