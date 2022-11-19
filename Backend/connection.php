@@ -6,6 +6,5 @@ $db_name = "inputdb";
 
 $mysqli = new mysqli($db_host, $db_user, $db_pass, $db_name);
 
-header("https://www.google.com");
 
 ?>

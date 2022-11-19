@@ -25,4 +25,5 @@ $query->execute();
 
 $response["success"] = true;
 
-echo json_encode($response);
+header("Location: http://localhost/Instagram_like_website/Frontend/index.html");
+
