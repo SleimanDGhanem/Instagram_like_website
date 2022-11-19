@@ -23,7 +23,7 @@ input{
   border-radius: 2px;
 }
 
-[type="button"]{
+[type="submit"]{
   width: 100px;
   height: 3vh;
   align-self: flex-end;
