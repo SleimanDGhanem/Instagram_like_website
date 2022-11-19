@@ -20,10 +20,9 @@ $hash = password_hash(
 );
 
 $query = $mysqli->prepare("INSERT INTO users(name, email, password) VALUES(?,?,?)");
-$query->bind_param("sss", $name, $email, $password);
+$query->bind_param("sss", $name, $email, $hash);
 $query->execute();
 
 $response["success"] = true;
 
 header("Location: http://localhost/Instagram_like_website/Frontend/index.html");
-
