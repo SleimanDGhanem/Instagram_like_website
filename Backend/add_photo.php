@@ -31,10 +31,10 @@ $user_id = $_SESSION['user_id'];
   $tempname = $_FILES["file"]["tmp_name"];
   // Now let's move the uploaded image into the folder: image
   if (move_uploaded_file($tempname, $folder)) {
-      echo "<h3> Image Uploaded Successfully</h3>";
+      echo "Image Uploaded Successfully";
 
   } else {
-      echo "<h3> Failed</h3>";
+      echo "Failed";
   }
 
 
