@@ -10,7 +10,6 @@ if (isset($_POST["name"]) && isset($_POST["email"]) && isset($_POST["password"])
   $response = [];
   $response["success"] = false;
   echo json_encode($response);
-  return;
 }
 
 
@@ -21,8 +20,9 @@ $hash = password_hash(
 
 $query = $mysqli->prepare("INSERT INTO users(name, email, password) VALUES(?,?,?)");
 $query->bind_param("sss", $name, $email, $hash);
-$query->execute();
-
+if($query->execute()){
 $response["success"] = true;
+}else{
+  $response["success"] = false;
 
-header("Location: http://localhost/Instagram_like_website/Frontend/index.html");
+}
