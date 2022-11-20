@@ -25,10 +25,14 @@ $array = $query->get_result();
  $result = $array->fetch_assoc();
 
  if(isset($result) && password_verify($password, $result['password'])){
-  header("Location: http://www.google.com");
+  $response["success"] = true;
 }else{
-  echo "you made a mistake";
+  $response["success"] = false;
 }
+
+echo json_encode($response);
+
+$_SESSION['email'] = $email;
 
 
 ?>
