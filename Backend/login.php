@@ -1,4 +1,5 @@
 <?php
+session_start();
 include("connection.php");
 
 if (isset($_POST["email"]) && isset($_POST["password"])) {
@@ -33,6 +34,6 @@ $array = $query->get_result();
 echo json_encode($response);
 
 $_SESSION['email'] = $email;
-
+$_SESSION['user_id']= $result['user_id'];
 
 ?>

@@ -16,7 +16,7 @@ window.onload = () => {
         formData
       );
       console.log(res);
-      window.location.href = "html/feed.html"
+      window.location.href = "html/addImage.html"
     } catch (e) {
       console.log(error);
     }

@@ -4,29 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- resets browser stylesheet -->
     <link rel="stylesheet" href="../css/normalize.css" />
     <!-- background folder -->
     <link rel="stylesheet" href="../css/background.css" />
     <!-- styling sheet -->
     <link rel="stylesheet" href="../css/feed.css" />
+    <!-- styling sheet -->
     <link rel="stylesheet" href="../css/addImage.css" />
+    <!-- axios script -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- add post API -->
+    <script src="../js/add_post.js"></script>
     <title>Post an Image</title>
   </head>
   <body>
     <nav>
       <ul>
         <li class="big"><a href="#">Input</a></li>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Profile</a></li>
-        <li><a href="#">Add photo</a></li>
+        <li><a href="feed.html">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="addImage.html">Add photo</a></li>
         <li><a href="#">Sign out</a></li>
       </ul>
     </nav>
     <div class="posting">
       <h1>Select A Picture</h1>
-      <form action="" method="post">
-        <input type="file">
-        <input type="submit" value="Post">
+      <form id="form">
+        <input type="file" name="file"/>
+        <label>caption:
+        <input type="text" name="caption" id="caption">
+      </label>
+        <input type="submit" name="submit" value="Post" />
       </form>
     </div>
   </body>
