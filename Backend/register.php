@@ -10,6 +10,7 @@ if (isset($_POST["name"]) && isset($_POST["email"]) && isset($_POST["password"])
   $response = [];
   $response["success"] = false;
   echo json_encode($response);
+  return;
 }
 
 
